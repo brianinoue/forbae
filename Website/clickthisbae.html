@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="code_stuff/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Kou</title>
+</head>
+<body>
+    <main>
+        <nav class="top-nav">
+            <a href="#hero" class="home-btn" id="homeBtn">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <i id="refreshBtn" class="fa-solid fa-arrows-rotate"></i>
+            <i id="volumeOn" class="fa-solid fa-volume-high"></i>
+            <i id="volumeOff" class="fa-solid fa-volume-xmark" style="display:none;"></i>
+        </nav>
+        <!--SECTION 1: Hero-->
+        <section id = "hero" class = "hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, <span class="blue">Kou</span> ^-^</h1>
+                <h2 class="hero-subtitle">
+                    <span
+                        class="typewrite" 
+                        data-period="5000" 
+                        data-type='["I love you, always and more."]'>
+                    </span>
+                </h2>
+            </div>
+            <a href="#about" class="arrow-button">
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </section>
+        <!--SECTION 2: About-->
+        <section id="about"class="about page">
+            <audio id="fireworkWhistle" src="code_stuff/sounds/firework_whistle.mp3"></audio>
+            <audio id="fireworkExplode" src="code_stuff/sounds/firework_explode.mp3"></audio>
+            <div class="stars" id="stars"></div>
+            <h1 id="haiku1">
+                Moonlight on your skin, <br>
+                Stars whisper what I can’t say <br>
+                You are all I see
+            </h1>
+            <a href="#loveme" class="icon-link">
+                <i class="fa-solid fa-cat"></i>
+            </a>
+        </section>
+        <!--SECTION 3: loveme-->
+        <section id="loveme" class="loveme page">
+            <div class="loveme-container">
+                <img id="loveImg" src="code_stuff/images/anya-forger-jumpscare.gif" alt="gif">
+                <div class="question">Do you love me?</div>
+                <div class="buttons">
+                    <button class="yes" id="yesBtn">Yes</button>
+                    <button class="no" id="noBtn">No</button>
+                </div>
+                <div id="celebration-container"></div>
+                <!-- audio -->
+                <audio id="loveSong" src="code_stuff/sounds/ilove.mp3" loop></audio>
+                <audio id="shocksound" src="code_stuff/sounds/gong.mp3"></audio>
+                <audio id="blink" src="code_stuff/sounds/blink.mp3"></audio>
+                <audio id="cry" src="code_stuff/sounds/crying.mp3"></audio>
+                <audio id="scary" src="code_stuff/sounds/scary.mp3"></audio>
+                <audio id="laugh" src="code_stuff/sounds/laugh.mp3"></audio>
+            </div>
+        </section>
+        <!--SECTION 4: todo-->
+        <section id="todo" class="todo page">
+            <div class="todo-container">
+                <div class="gif-header">Things to do:</div>
+                <div class="gif-wrapper">
+                    <i class="fa-solid fa-arrow-left arrow-left"></i>
+                    <img id="mainGif" src="code_stuff/images/Mochi1.png" alt="Activity gif">
+                    <i class="fa-solid fa-arrow-right arrow-right"></i>
+                </div>
+                <div class="gif-description" id="gifDescription">Description of the first gif</div>
+                <a href="#japan" class="icon-link todo-fish">
+                    <i class="fa-solid fa-fish"></i>
+                </a>
+            </div>
+        </section>
+        <!--SECTION 5: last-->
+        <section id="japan" class="japan page">
+            <img src="code_stuff/gifs/japan.gif" alt="Japan gif" class="japan-gif">
+            <div class="japan-text">
+                <p id="japanText">
+                    I am so grateful to have you in my life. You bring me so much joy and fun that I miss you even when we are together. I love the way you make me feel special and how your laughter brightens my day. I love that you show me your passions and that you have so many passions. Most of it is art, so I hope that this website has fulfilled your expectations. You make my world light and colorful, and I hope that I do the same for you. I want to be with you forever and make you as happy as you make me. I love you so much, Kou <3
+                </p>
+            </div>
+        </section>
+    </main>
+<script src="code_stuff/script.js"></script>
+</body>
+</html>
